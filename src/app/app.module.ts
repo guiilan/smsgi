@@ -10,6 +10,7 @@ import { CreateUserComponent } from './users/create-user/create-user.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateComponent } from './users/update/update.component';
 import { DeleteComponent } from './users/delete/delete.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { DeleteComponent } from './users/delete/delete.component';
     HeaderComponent,
     CreateUserComponent,
     UpdateComponent,
-    DeleteComponent
+    DeleteComponent,
+    LandingpageComponent
   ],
   imports: [
     BrowserModule,

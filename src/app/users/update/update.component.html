@@ -1,7 +1,6 @@
-<p>update works!</p>
-
-<div *ngIf="request">
-    <div>
+<div class="register-page">
+    <div class="register-container">
+        <h1>Smsgi - Update user</h1>
         <label>
             Name
         </label>
@@ -12,5 +11,7 @@
             <input [(ngModel)] = "request.job" >
 
         <button (click)="update()">Create</button>
-        <a routerLink="/header" id="back">Back to home</a>
+        <a routerLink="/" id="back">Back to home</a>
     </div>
+</div>
+

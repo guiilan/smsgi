@@ -1,5 +1,3 @@
-
-
 <div class="register-page">
     <div class="register-container">
         <h1>Smsgi - Register your job</h1>
@@ -24,7 +22,7 @@
             <input [(ngModel)] = "request.job" >
 
         <button (click)="saved()">Create</button>
-        <a routerLink="/header" id="back">Back to home</a>
+        <a routerLink="/" id="back">Back to home</a>
     </div>
 </div>
 
@@ -34,6 +32,6 @@
         <h1> Hi,{{response.name}} welcome to Smsgi</h1>
         <h2> I hope that you will develop well in your new position; {{response.job}} </h2>
         <h3> Ah! Don't forget to write down your registration : {{response.id}} </h3>
-        <a routerLink="/header" id="back">Back to home</a>
+        <a routerLink="/" id="back">Back to home</a>
     </div>
 </div>

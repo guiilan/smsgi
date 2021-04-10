@@ -30,7 +30,7 @@ export class UpdateComponent implements OnInit {
 
   update(){
     this.userService.updateUser(this.id, this.request).subscribe(res => {
-      alert(`${res.name},${res.job}`);
+      alert(`Suas alterações foram feitas${res.name}, ${res.job}`);
     })
   }
 

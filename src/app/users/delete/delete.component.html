@@ -1,16 +1,16 @@
-<p>delete works!</p>
-
-<div *ngIf="user">
-    <div>
+<div class="register-page" *ngIf="user">
+    <div class="register-container">
+        <h1>Smsgi - Delete user</h1>
+        <h2>check the information of the user you want to delete</h2>
         <label>
-            Name: <strong> {{user.first_name}} </strong>
+            {{user.first_name}}
         </label>
             
         <label>
-            Job: <strong> {{user.email}} </strong>
+            {{user.email}}
         </label>
-            
-
-        <button (click)="delete()">Confirmar</button>
-        <a routerLink="/header" id="back">Back to home</a>
+            <button (click)="delete()">Delete</button>
+            <a routerLink="/" id="back">cancel</a>
+        </div>
     </div>
+    
