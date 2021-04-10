@@ -1,0 +1,16 @@
+<p>update works!</p>
+
+<div *ngIf="request">
+    <div>
+        <label>
+            Name
+        </label>
+            <input [(ngModel)] = "request.name" >
+        <label>
+            Job
+        </label>
+            <input [(ngModel)] = "request.job" >
+
+        <button (click)="update()">Create</button>
+        <a routerLink="/header" id="back">Back to home</a>
+    </div>

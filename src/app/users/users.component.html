@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="title-container">
+    <h1>These are some of our customers</h1>
+</div>
+<a *ngIf="listUsers" class="container-users" >
+    <div class="container-grid">
+        <a *ngFor="let user of listUsers.data" class="card-container" routerLink="/user/update/{{user.id}}">
+            <div class="container-informate">
+                <p>{{user.first_name}} {{user.last_name}}</p>
+                <p>{{user.email}} </p>
+            </div>
+            <img src={{user.avatar}}>
+            <a routerLink="/user/delete/{{user.id}}">Deletar</a>
+        </a>
+    </div>
+</a>
+
+
+
+

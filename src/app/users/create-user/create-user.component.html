@@ -1,0 +1,39 @@
+
+
+<div class="register-page">
+    <div class="register-container">
+        <h1>Smsgi - Register your job</h1>
+        <nav>
+            <a href="#">
+                <img src="../../../assets/images/facebook-logo.svg" alt="social"/>
+            </a>
+            <a href="#">
+                <img src="../../../assets/images/instagram.svg" alt="social"/>
+            </a>
+            <a href="#">
+                <img src="../../../assets/images/linkedin.svg" alt="social"/>
+            </a>
+        </nav>
+        <label>
+            Name
+        </label>
+            <input [(ngModel)] = "request.name" >
+        <label>
+            Job
+        </label>
+            <input [(ngModel)] = "request.job" >
+
+        <button (click)="saved()">Create</button>
+        <a routerLink="/header" id="back">Back to home</a>
+    </div>
+</div>
+
+
+<div *ngIf="response" class="container-sucess-register">
+    <div class="end-register">
+        <h1> Hi,{{response.name}} welcome to Smsgi</h1>
+        <h2> I hope that you will develop well in your new position; {{response.job}} </h2>
+        <h3> Ah! Don't forget to write down your registration : {{response.id}} </h3>
+        <a routerLink="/header" id="back">Back to home</a>
+    </div>
+</div>

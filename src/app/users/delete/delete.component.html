@@ -1,0 +1,16 @@
+<p>delete works!</p>
+
+<div *ngIf="user">
+    <div>
+        <label>
+            Name: <strong> {{user.first_name}} </strong>
+        </label>
+            
+        <label>
+            Job: <strong> {{user.email}} </strong>
+        </label>
+            
+
+        <button (click)="delete()">Confirmar</button>
+        <a routerLink="/header" id="back">Back to home</a>
+    </div>
