@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { UpdateComponent } from './users/update/update.component';
 import { DeleteComponent } from './users/delete/delete.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
     CreateUserComponent,
     UpdateComponent,
     DeleteComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
